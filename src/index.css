@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import 'leaflet/dist/leaflet.css';
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.sbu-red {
+  color: #991B1B;
+}
+
+.bg-sbu-red {
+  background-color: #991B1B;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #991b1b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7f1d1d;
+}

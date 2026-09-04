@@ -1,0 +1,38 @@
+{
+  "ceas": {
+    "hours": "Mon-Fri: 9am - 8pm",
+    "capacity": "Moderate (12/30 people)",
+    "equipment": [
+      { "name": "3D Printers", "status": "Available (4/6)", "type": "good" },
+      { "name": "Soldering Stations", "status": "In Use", "type": "busy" }
+    ]
+  },
+  "innovation": {
+    "hours": "Mon-Thu: 10am - 9pm, Fri: 10am - 5pm",
+    "capacity": "Busy (25/40 people)",
+    "equipment": [
+      {
+        "name": "Laser Cutters",
+        "status": "Fully Booked until 4pm",
+        "type": "busy"
+      },
+      { "name": "VR Stations", "status": "Available (2/2)", "type": "good" },
+      { "name": "Sewing Machines", "status": "Available (3/4)", "type": "good" }
+    ]
+  },
+  "tll": {
+    "hours": "Mon-Fri: 9am - 5pm",
+    "capacity": "Quiet (5/20 people)",
+    "equipment": [
+      { "name": "Audio Booth", "status": "Available", "type": "good" },
+      { "name": "Editing Workstation", "status": "In Use", "type": "busy" }
+    ]
+  },
+  "third": {
+    "hours": "Tue-Thu: 12pm - 6pm",
+    "capacity": "Closed",
+    "equipment": [
+      { "name": "Arduino Lab", "status": "Closed", "type": "neutral" }
+    ]
+  }
+}
