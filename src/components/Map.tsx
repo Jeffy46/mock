@@ -1,7 +1,18 @@
-import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
-import data from "/home/jeffyp/repos/project/mockPage/frontend/published.json";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import L from "leaflet";
+import data from "../../published.json";
 import type { MakerSpace } from "../interfaces/MakerSpace";
-import { useEffect, useState } from "react";
+// Bring back the classic Leaflet marker using stable CDN links
+const defaultIcon = L.icon({
+  iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
+  iconRetinaUrl:
+    "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png",
+  shadowUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+});
 let Map = () => {
   let spaces: MakerSpace[];
   spaces = data?.data?.maker_spaces;
@@ -26,7 +37,10 @@ let Map = () => {
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             {spaces.map((m: MakerSpace) => (
-              <Marker position={[m.location.lat, m.location.lon]}>
+              <Marker
+                position={[m.location.lat, m.location.lon]}
+                icon={defaultIcon}
+              >
                 <Popup>
                   A pretty CSS3 popup. <br /> Easily customizable.
                 </Popup>

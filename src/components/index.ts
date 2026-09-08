@@ -5,3 +5,4 @@ export { default as SpaceGrid } from "./spaces/SpaceGrid";
 export { default as Community } from "./community/Community";
 export { default as Footer } from "./Footer";
 export { default as AnimatedBackground } from "./AnimatedBackground";
+export { default as Podium } from "./leaderboard/Podiums";

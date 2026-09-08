@@ -84,7 +84,7 @@ let Workshops = () => {
               </td>
               <td className="py-3 px-4">
                 <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200">
-                  Few Spots
+                  Limited
                 </span>
               </td>
             </tr>

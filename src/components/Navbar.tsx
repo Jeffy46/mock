@@ -1,3 +1,4 @@
+import { HashLink } from "react-router-hash-link";
 let Navbar = () => {
   return (
     // Navigation
@@ -10,21 +11,40 @@ let Navbar = () => {
           </span>
         </div>
         <div className="hidden md:flex space-x-8 text-sm font-medium">
-          <a href="#spaces" className="hover:text-gray-200 transition">
+          <HashLink
+            className="hover:text-gray-200 transition"
+            smooth
+            to={"/mock/#spaces"}
+          >
             Spaces
-          </a>
-          <a href="#map-section" className="hover:text-gray-200 transition">
+          </HashLink>
+          <HashLink
+            className="hover:text-gray-200 transition"
+            smooth
+            to={"/mock/#map-section"}
+          >
             Map
-          </a>
-          <a href="#workshops" className="hover:text-gray-200 transition">
+          </HashLink>
+          <HashLink
+            className="hover:text-gray-200 transition"
+            smooth
+            to={"/mock/#workshops"}
+          >
             Workshops
-          </a>
-          <a href="#announcements" className="hover:text-gray-200 transition">
+          </HashLink>
+          <HashLink
+            className="hover:text-gray-200 transition"
+            smooth
+            to={"/mock/#announcements"}
+          >
             Announcements
-          </a>
-          <a href="#leaderboard" className="hover:text-gray-200 transition">
+          </HashLink>
+          <HashLink
+            className="hover:text-gray-200 transition"
+            to={"/mock/leaderboard"}
+          >
             Top Makers
-          </a>
+          </HashLink>
         </div>
         {/* Mobile Menu Button */}
         <button className="md:hidden focus:outline-none">

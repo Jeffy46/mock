@@ -7,13 +7,16 @@ interface props {
   space: MakerSpace;
 }
 let SpaceCard = ({ space }: props) => {
+  const imageSrc = space.media.url.startsWith("//")
+    ? `https:${space.media.url}`
+    : space.media.url;
   const liveData = mockLiveData as MockLiveData;
   console.log(liveData[space.name].hours);
   return (
     <div className="bg-white dark:bg-gray-800/50 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-1 transition duration-300 flex flex-col h-full border border-gray-200 dark:border-gray-700">
       <div className="relative">
         <img
-          src={space.media.url}
+          src={imageSrc}
           alt="${slide.text.headline}"
           className="w-full h-48 object-cover"
         ></img>
