@@ -1,5 +1,7 @@
 let Hero = () => {
+
   return (
+
     <header className="bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg rounded-xl p-6 md:p-8 border border-gray-200/50 dark:border-gray-700/50">
       <div className="md:flex items-center">
         <div className="md:w-2/3 pr-8">
@@ -54,44 +56,8 @@ let Hero = () => {
             </a>
           </div>
         </div>
-        {/*Stats / Quick Glance */}
-        <div className="md:w-1/3 mt-8 md:mt-0">
-          <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700">
-            <h3 className="font-bold text-gray-700 dark:text-gray-300 mb-4 border-b dark:border-gray-600 pb-2">
-              Live Campus Status
-            </h3>
-            <ul className="space-y-3">
-              <li className="flex justify-between items-center">
-                <span className="text-sm text-white">
-                  <i className="fa-solid fa-print mr-2 text-blue-600"></i>3D
-                  Printers
-                </span>
-                <span className="text-xs font-semibold bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 px-2 py-1 rounded-full">
-                  12 Available
-                </span>
-              </li>
-              <li className="flex justify-between items-center">
-                <span className="text-sm text-white">
-                  <i className="fa-solid fa-bolt mr-2 text-yellow-600"></i>Laser
-                  Cutters
-                </span>
-                <span className="text-xs font-semibold bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200 px-2 py-1 rounded-full">
-                  High Demand
-                </span>
-              </li>
-              <li className="flex justify-between items-center">
-                <span className="text-sm text-white">
-                  <i className="fa-solid fa-vr-cardboard mr-2 text-purple-600"></i>
-                  VR Stations
-                </span>
-                <span className="text-xs font-semibold bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 px-2 py-1 rounded-full">
-                  4 Available
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
+
     </header>
   );
 };

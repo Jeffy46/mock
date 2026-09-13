@@ -3,6 +3,7 @@ import "./App.css";
 import Homepage from "./pages/Homepage";
 import Leaderboard from "./pages/Leaderboard";
 import { AnimatedBackground, Footer, Navbar } from "./components";
+import Workshop from "./pages/Workshop";
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       <Navbar />
       <AnimatedBackground />
       <Routes>
-        <Route path="/mock" element={<Homepage />} />
-        <Route path="/mock/leaderboard" element={<Leaderboard />} />
+        <Route path="/" element={<Homepage />} />
+        <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/workshop" element={<Workshop />} />
       </Routes>
       <Footer />
     </BrowserRouter>

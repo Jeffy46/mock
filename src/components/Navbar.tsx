@@ -14,36 +14,37 @@ let Navbar = () => {
           <HashLink
             className="hover:text-gray-200 transition"
             smooth
-            to={"/mock/#spaces"}
+            to={"/#spaces"}
           >
             Spaces
           </HashLink>
           <HashLink
             className="hover:text-gray-200 transition"
             smooth
-            to={"/mock/#map-section"}
-          >
-            Map
-          </HashLink>
-          <HashLink
-            className="hover:text-gray-200 transition"
-            smooth
-            to={"/mock/#workshops"}
-          >
-            Workshops
-          </HashLink>
-          <HashLink
-            className="hover:text-gray-200 transition"
-            smooth
-            to={"/mock/#announcements"}
+            to={"/#announcements"}
           >
             Announcements
           </HashLink>
           <HashLink
             className="hover:text-gray-200 transition"
-            to={"/mock/leaderboard"}
+            smooth
+            to={"/#map-section"}
+          >
+            Map
+          </HashLink>
+
+
+          <HashLink
+            className="hover:text-gray-200 transition"
+            to={"/leaderboard"}
           >
             Top Makers
+          </HashLink>
+          <HashLink
+            className="hover:text-gray-200 transition"
+            to={"/workshop"}
+          >
+            Workshops
           </HashLink>
         </div>
         {/* Mobile Menu Button */}

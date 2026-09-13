@@ -4,7 +4,7 @@ let Footer = () => {
       <div className="container mx-auto px-6 text-center">
         <p className="mb-2">Stony Brook University Maker Space Network</p>
         <p className="text-gray-400 text-sm">
-          &copy; 2025 Stony Brook University. All rights reserved.
+          &copy; 2026 Stony Brook University. All rights reserved.
         </p>
       </div>
     </footer>
