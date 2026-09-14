@@ -16,10 +16,8 @@ let Workshops = () => {
           </div>
         </div>
 
-
         <div className="overflow-x-auto">
           <div className="flex gap-4 pb-2 pt-2">
-
             {/* Intro to Laser Cutting */}
             <div className="w-56 shrink-0 aspect-square bg-white dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg hover:-translate-y-1 transition duration-300 flex flex-col overflow-hidden">
               <div className="bg-sbu-red text-white px-4 py-2 flex items-center justify-between">
@@ -34,15 +32,20 @@ let Workshops = () => {
                 </span>
               </div>
               <div className="p-4 flex-1 flex flex-col justify-between">
-                <h4 className="font-bold text-gray-800 dark:text-gray-200 text-base leading-snug">
+                <div className="font-bold text-gray-800 dark:text-gray-200 text-base leading-snug">
                   Intro to Laser Cutting
-                </h4>
+                </div>
                 <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mt-2">
                   <i className="fa-solid fa-location-dot mr-1.5"></i>
                   Innovation Lab
-                  <a href="https://example.com" target="_blank"
+                  <a
+                    href="https://example.com"
+                    target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-3 py-1.5 rounded-md transition ml-auto">RSVP</a>
+                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-3 py-1.5 rounded-md transition ml-auto"
+                  >
+                    RSVP
+                  </a>
                 </div>
               </div>
             </div>
@@ -61,15 +64,20 @@ let Workshops = () => {
                 </span>
               </div>
               <div className="p-4 flex-1 flex flex-col justify-between">
-                <h4 className="font-bold text-gray-800 dark:text-gray-200 text-base leading-snug">
+                <div className="font-bold text-gray-800 dark:text-gray-200 text-base leading-snug">
                   VR Development Unity
-                </h4>
+                </div>
                 <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mt-2">
                   <i className="fa-solid fa-location-dot mr-1.5"></i>
                   Teaching & Learning Lab
-                  <a href="https://example.com" target="_blank"
+                  <a
+                    href="https://example.com"
+                    target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-3 py-1.5 rounded-md transition ml-auto">RSVP</a>
+                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-3 py-1.5 rounded-md transition ml-auto"
+                  >
+                    RSVP
+                  </a>
                 </div>
               </div>
             </div>
@@ -88,15 +96,20 @@ let Workshops = () => {
                 </span>
               </div>
               <div className="p-4 flex-1 flex flex-col justify-between">
-                <h4 className="font-bold text-gray-800 dark:text-gray-200 text-base leading-snug">
+                <div className="font-bold text-gray-800 dark:text-gray-200 text-base leading-snug">
                   Arduino Basics
-                </h4>
+                </div>
                 <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mt-2">
                   <i className="fa-solid fa-location-dot mr-1.5"></i>
                   The Space (CEAS)
-                  <a href="https://example.com" target="_blank"
+                  <a
+                    href="https://example.com"
+                    target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-3 py-1.5 rounded-md transition ml-auto">RSVP</a>
+                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-3 py-1.5 rounded-md transition ml-auto"
+                  >
+                    RSVP
+                  </a>
                 </div>
               </div>
             </div>
@@ -115,19 +128,23 @@ let Workshops = () => {
                 </span>
               </div>
               <div className="p-4 flex-1 flex flex-col justify-between">
-                <h4 className="font-bold text-gray-800 dark:text-gray-200 text-base leading-snug">
+                <div className="font-bold text-gray-800 dark:text-gray-200 text-base leading-snug">
                   Textile Tech
-                </h4>
+                </div>
                 <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mt-2">
                   <i className="fa-solid fa-location-dot mr-1.5"></i>
                   The 3rd Space
-                  <a href="https://example.com" target="_blank"
+                  <a
+                    href="https://example.com"
+                    target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-3 py-1.5 rounded-md transition ml-auto">RSVP</a>
+                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-3 py-1.5 rounded-md transition ml-auto"
+                  >
+                    RSVP
+                  </a>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -135,7 +152,8 @@ let Workshops = () => {
   );
 };
 export default Workshops;
-{/*<table className="min-w-full bg-white dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
+{
+  /*<table className="min-w-full bg-white dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
             <thead className="bg-gray-100 dark:bg-gray-700/50">
               <tr>
                 <th className="py-3 px-4 text-left text-xs font-semibold text-gray-600 dark:text-gray-300 uppercase tracking-wider">
@@ -218,4 +236,5 @@ export default Workshops;
                 </td>
               </tr>
             </tbody>
-          </table> */}
+          </table> */
+}

@@ -1,7 +1,5 @@
 let Hero = () => {
-
   return (
-
     <header className="bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg rounded-xl p-6 md:p-8 border border-gray-200/50 dark:border-gray-700/50">
       <div className="md:flex items-center">
         <div className="md:w-2/3 pr-8">
@@ -49,15 +47,14 @@ let Hero = () => {
               Find a Space
             </a>
             <a
-              href="#workshops"
+              href="#announcements"
               className="bg-white border-2 border-sbu-red text-sbu-red hover:bg-red-50 dark:hover:bg-gray-800 font-bold py-3 px-6 rounded-lg transition"
             >
-              Upcoming Workshops
+              Announcements
             </a>
           </div>
         </div>
       </div>
-
     </header>
   );
 };
