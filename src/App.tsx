@@ -7,7 +7,7 @@ import Workshop from "./pages/Workshop";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="mock">
       <Navbar />
       <AnimatedBackground />
       <Routes>

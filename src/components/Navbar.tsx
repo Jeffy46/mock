@@ -34,15 +34,14 @@ let Navbar = () => {
           >
             Map
           </HashLink>
-
+          <HashLink className="hover:text-gray-200 transition" to={"/workshop"}>
+            Workshops
+          </HashLink>
           <HashLink
             className="hover:text-gray-200 transition"
             to={"/leaderboard"}
           >
             Top Makers
-          </HashLink>
-          <HashLink className="hover:text-gray-200 transition" to={"/workshop"}>
-            Workshops
           </HashLink>
         </div>
         {/* Mobile Menu Button */}

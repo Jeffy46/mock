@@ -2,21 +2,20 @@ import { useEffect, useState } from "react";
 import type { Student } from "../../interfaces/Student";
 
 let Standings = () => {
-  let [page, setPage] = useState<number>(0);
+  let LB_API_BASE_URL = import.meta.env.VITE_LB_API_BASE_URL;
+
   let [list, setList] = useState<Student[]>([]);
   let position: number = 4;
+
   useEffect(() => {
-    fetch("http://localhost:8080/firstPage")
+    fetch(`${LB_API_BASE_URL}/firstPage`)
       .then((response) => response.json())
       .then((data) => setList([...list, ...data]));
-    setPage(page + 1);
   }, []);
-  console.log(list);
   let handleClick = () => {
-    fetch("http://localhost:8080/page/" + page)
+    fetch(`${LB_API_BASE_URL}/page/${position - 1}-${20}`)
       .then((response) => response.json())
       .then((data) => setList([...list, ...data]));
-    setPage(page + 1);
   };
   return (
     <>
@@ -29,12 +28,12 @@ let Standings = () => {
               </span>
               <div>
                 <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
-                  {s["First Name"] + " " + s["Last Name"]}
+                  {s.firstName + " " + s.lastName}
                 </h4>
               </div>
             </div>
             <span className="text-xs text-gray-400 dark:text-white">
-              <span className="">{s.Points} Points</span>
+              <span className="">{s.points} points</span>
             </span>
           </div>
         ))}

@@ -28,7 +28,6 @@ html.dark ::-webkit-scrollbar-track {
 
 ::-webkit-scrollbar-thumb {
   background: #991b1b;
-  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
