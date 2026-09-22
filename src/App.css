@@ -2,3 +2,19 @@
     width: 100%;
     height: 500px;
 }
+
+
+.hero-background {
+    background-image: url('../public/space-singer-students-rocket.jpg');
+
+    /* Step 2: Prevent the image from tiling/repeating */
+    background-repeat: no-repeat;
+
+    /* Step 3: Center the image horizontally and vertically */
+    background-position: center;
+
+    /* Step 4: Scale the image to completely cover the div while keeping aspect ratio */
+    background-size: cover;
+
+    height: 600px;
+}
